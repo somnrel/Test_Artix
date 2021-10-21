@@ -5,7 +5,6 @@ public abstract class Transport {
     byte Wheels;
     int MaxSpeed;
 
-
     public void printParam(){
         System.out.println(this.Name);
         System.out.println(this.MaxSpeed);
