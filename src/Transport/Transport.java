@@ -1,13 +1,13 @@
 package Transport;
 
 public abstract class Transport {
-    String Name;
-    byte Wheels;
-    int MaxSpeed;
+    String name;
+    int maxSpeed;
+    int wheels;
 
     public void printParam(){
-        System.out.println(this.Name);
-        System.out.println(this.MaxSpeed);
-        System.out.println(this.Wheels);
+        System.out.println(this.name);
+        System.out.println(this.maxSpeed);
+        System.out.println(this.wheels);
     }
 }

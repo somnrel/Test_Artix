@@ -1,17 +1,20 @@
 package Transport;
 
 public class Bike extends Transport{
-    final String Name = "Мотоцикл";
-    final int  MaxSpeed = 200;
-    final byte Wheels = 2;
-    final String Brand = "Kawasaki";
+    String brand;
+    public Bike(String Name, int MaxSpeed, int Wheels, String Brand){
+        this.name = Name;
+        this.maxSpeed = MaxSpeed;
+        this.wheels = Wheels;
+        this.brand = Brand;
+    }
 
     @Override
     public void printParam() {
-        System.out.println("Наименование транспорта: " + this.Name);
-        System.out.println("Максимальная скорость: " + this.MaxSpeed);
-        System.out.println("Кол-во колес: " + this.Wheels);
-        System.out.println("Марка мотоцикла: " + this.Brand);
+        System.out.println("Наименование транспорта: " + this.name);
+        System.out.println("Максимальная скорость: " + this.maxSpeed);
+        System.out.println("Кол-во колес: " + this.wheels);
+        System.out.println("Марка мотоцикла: " + this.brand);
     }
 }
 

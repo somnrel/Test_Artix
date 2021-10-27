@@ -1,15 +1,19 @@
 package Transport;
 
 public class Bus extends Transport{
-    final String Name = "Автобус";
-    final int  MaxSpeed = 120;
-    final byte Capacity = 42;
+    int capacity;
+    public Bus(String Name, int MaxSpeed, int Wheels, int Capacity){
+        this.name = Name;
+        this.maxSpeed = MaxSpeed;
+        this.wheels = Wheels;
+        this.capacity = Capacity;
+    }
 
     @Override
     public void printParam() {
-        System.out.println("Наименование транспорта: " + this.Name);
-        System.out.println("Максимальная скорость: " + this.MaxSpeed);
-        System.out.println("Кол-во колес: " + this.Wheels);
-        System.out.println("Вместимость: " + this.Capacity);
+        System.out.println("Наименование транспорта: " + this.name);
+        System.out.println("Максимальная скорость: " + this.maxSpeed);
+        System.out.println("Кол-во колес: " + this.wheels);
+        System.out.println("Вместимость: " + this.capacity);
     }
 }
