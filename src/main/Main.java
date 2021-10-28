@@ -10,7 +10,7 @@ public class Main {
         Factory factory = new Factory();
         for(String type:args){
             Transport transport = factory.createTransport(type); // Фабрика по созданию объектов
-            transport.printParam(); //Выводим параметры каждого из объектов
+            transport.printValues(); //Выводим параметры каждого из объектов
             System.out.println();
         }
     }

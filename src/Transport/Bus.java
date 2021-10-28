@@ -10,7 +10,7 @@ public class Bus extends Transport{
     }
 
     @Override
-    public void printParam() {
+    public void printValues() {
         System.out.println("Наименование транспорта: " + this.name);
         System.out.println("Максимальная скорость: " + this.maxSpeed);
         System.out.println("Кол-во колес: " + this.wheels);

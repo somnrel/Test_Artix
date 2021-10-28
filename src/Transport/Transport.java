@@ -5,7 +5,7 @@ public abstract class Transport {
     int maxSpeed;
     int wheels;
 
-    public void printParam(){
+    public void printValues(){
         System.out.println(this.name);
         System.out.println(this.maxSpeed);
         System.out.println(this.wheels);
